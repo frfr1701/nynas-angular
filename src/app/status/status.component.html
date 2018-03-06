@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    <div class="card border border-primary bg-light col-md-5 mt-4">
+      <div class="card-body">
+        <header>
+          <h3>Åker tågen?</h3>
+        </header>
+        <form>
+          <div class="form-group">
+            <label class="col-form-label" for="going_field">Jag åker ifrån..</label>
+            <input id="train-get-info" class="form-control" maxlength="45" id="going_field" type="text" placeholder="City..">
+          </div>
+          <button id="train-search" type="button" class="btn btn-primary">Sök..</button>
+        </form>
+        <table class="table mt-3 table-trains">
+        </table>
+      </div>
+    </div>
+    <div class="card border border-primary bg-light col-md-6 offset-md-1 mt-4">
+      <div class="card-body">
+        <header>
+          <h3>Vädret på Nicksta</h3>
+        </header>
+        <table class="table table-weather">
+          <thead class="thead-dark">
+            <tr>
+              <th>Klocka</th>
+              <th>Väder</th>
+              <th>Värme</th>
+              <th>Vind</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let weatherStamp of weatherData">
+              <td>
+                {{ weatherStamp.clock }}
+              </td>
+              <td>
+                {{ weatherStamp.description }}
+              </td>
+              <td>
+                {{ weatherStamp.temperature }}
+              </td>
+              <td>
+                {{ weatherStamp.wind }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

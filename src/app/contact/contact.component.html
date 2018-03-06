@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="card border border-primary col-md-12 mt-4">
+            <div class="card-body"></div>
+            <header>
+                <h3>Lämna dina synpunkter här!</h3>
+            </header>
+            <form>
+                <div class="form-group row col-md-12">
+                    <label for="Rubrik">Rubrik</label>
+                    <input maxlength="45" type="text" class="form-control" id="Rubrik" placeholder="Rubrik">
+                </div>
+                <div class="form-group row col-md-12">
+                    <label for="beskrivning" class="col-form-label">Beskrivning</label>
+                    <textarea class="form-control" name="Beskrivning" id="beskrivning" cols="20" rows="2" maxlength="100"></textarea>
+                    <small>Max 100 tecken</small>
+                </div>
+                <div class="form-group row col-md-12">
+                    <label for="business">Ärende</label>
+                    <select name="business" id="business">
+                        <option value="Strand">Strand</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-12">
+                    <label>Vill du få svar på din synpunkt?</label>
+                    <div class="svara">
+                        <label for="svar_ja">Ja</label>
+                        <input value="yes" name="svar" type="radio" id="svar_ja">
+                        <label for="svar_nej">Nej</label>
+                        <input value="no" name="svar" type="radio" id="svar_nej" checked>
+                        <div class="toggle_hide">
+                            <label for="email_field">Email</label>
+                            <input maxlength="45" class="form-control" id="email_field" type="text" placeholder="example@email.com">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row col-md-8">
+                    <button type="button" class="btn btn-primary">Skicka..</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
